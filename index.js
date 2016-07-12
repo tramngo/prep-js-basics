@@ -10,6 +10,14 @@
 * It should be a String.
 **/
 
+var firstName = "Tram";
+console.log(firstName);
+
+var lastName = "Ngo";
+console.log(lastName);
+
+var birthPlace = "Oklahoma";
+console.log(birthPlace);
 
 
 /**
@@ -22,7 +30,14 @@
 * Their values should be a Number
 **/
 
+var favoriteNumber = "9";
+console.log(favoriteNumber); 
 
+var currentYear = "2016";
+console.log(currentYear);
+
+var thatOnePrinceSong = "7";
+console.log(thatOnePrinceSong);
 
 /**
 * #3
@@ -34,7 +49,17 @@
 * Their values should be a Boolean
 **/
 
+var isDaytime = false;
+console.log(isDaytime);
 
+var isLeftHanded = false;
+console.log(isLeftHanded);
+
+var inHawaii = true;
+console.log(inHawaii);
+
+var isHappyCoding = true
+console.log(isHappyCoding);
 
 /**
 * #4
@@ -45,7 +70,11 @@
 * Their values should be a Null value
 **/
 
+var enrolledAtDevLeague = null;
+console.log(enrolledAtDevLeague);
 
+var completedFridayPrep = null;
+console.log(completedFridayPrep);
 
 /**
 * #5a
@@ -56,7 +85,12 @@
 * which can be found along the west coast of The United States.
 **/
 
+var westCoast = ["Oregon","Washington","California"];
+console.log(westCoast);
 
+console.log(westCoast[0]);
+console.log(westCoast[1]);
+console.log(westCoast[2]);
 
 /**
 * #5b
@@ -67,7 +101,8 @@
 * Have at least ten even values in this array.
 **/
 
-
+var evenNumbers = ["2","4","6","8","10","12","14"];
+console.log(evenNumbers);
 
 /**
 * #6a Arithmetic
@@ -101,7 +136,14 @@
 *   operator(==) vs triple comparison operator(===).
 */
 
+var isEqual = "Tacocat" == "tacocat";
+console.log(isEqual);
 
+var isSame = 5 == "5";
+console.log(isSame); //true
+
+var isSame = 5 === "5";
+console.log(isSame);//false
 
 /**
 * #6c Assignments
@@ -119,6 +161,24 @@
 *   it can only test that you declared the variable by giving it the right name.
 */
 
+var generalContainer = 7;
+console.log(generalContainer);
+
+generalContainer = generalContainer +=1; 
+console.log(generalContainer);//8
+
+generalContainer = generalContainer -=2;
+console.log(generalContainer); //6
+
+generalContainer = generalContainer *=3; 
+console.log(generalContainer); //18
+
+generalContainer = generalContainer /=6
+console.log(generalContainer); //3
+
+generalContainer = generalContainer %=2; 
+console.log(generalContainer); //1
+
 
 
 /**
@@ -133,7 +193,14 @@
 * Store the return value to a variable named `jumpResult` and use console.log to inspect the value which was returned by your function
 **/
 
+function jump (height) {
+	//instructions
+	return "You jumped 9 feet high!";
+}
+jump(); //invoking the function
 
+var highJump = jump(10); 
+console.log(highJump); 
 
 /**
 * #7b
@@ -145,3 +212,14 @@
 * if invoked in this way -> cook("Tomatoes", "Cheese", "Pizza");
 **/
 
+function cook (ingredient1,ingredient2,recipe) {
+	return ingredient1 + " and " + ingredient2 + " make a " + recipe + " !";
+}
+cook(); //invoking the function
+
+var pizzaDinner = cook("Tomatoes","Cheese","Pizza");
+console.log(pizzaDinner);
+
+
+
+var hawaiianIslands = ["Oahu","Hawaii","Kauai","Lanai","Molokai","Maui", "Kahoolawe","Molokini","Niihau"]
